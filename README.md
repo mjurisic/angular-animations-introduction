@@ -1,0 +1,1 @@
+An introduction to angular animation, made for AngularVienna meetup, held on September 28th, partly live coded

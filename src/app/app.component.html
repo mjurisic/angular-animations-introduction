@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+
+<ul *ngIf="isLoggedIn()">
+  <li>
+    <a routerLink="first">first</a>
+  </li>
+  <li>
+    <a routerLink="second">second</a>
+  </li>
+</ul>
+<router-outlet>
+  
+
+</router-outlet>

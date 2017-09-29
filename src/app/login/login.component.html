@@ -1,0 +1,10 @@
+<div id="login-screen">  
+  <form>
+    <input id="login-username" #username placeholder="Benutzername" (keydown.enter)="doLogin(username.value, password.value, loginButton)"/>
+    <input id="login-password" #password placeholder="Passwort" type="password" (keydown.enter)="doLogin(username.value, password.value, loginButton)"/>
+    <button id="login-button" 
+      [@wobble]="wobbleState"
+      (@wobble.done)="wobbleState='inactive'"
+      (click)="doLogin(username.value, password.value)">Login</button>
+  </form>
+</div>

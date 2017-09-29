@@ -1,0 +1,14 @@
+<div> 
+  <div [@myanimation]="myanimstate" (@myanimation.start)="handleStart($event)"> it Works </div>
+
+  <button (click)="runAnimation()"> do something</button>
+
+</div>
+
+  
+<p>Template</p>
+<div [@listAnimation]="items.length">
+  <div *ngFor="let item of items"  >  
+    <p>{{item.title}}</p>
+  </div>
+</div>  
